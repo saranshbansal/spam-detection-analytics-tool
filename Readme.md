@@ -2,6 +2,9 @@
 
 Build Restful CRUD API for a simple Note-Taking application using Spring Boot, Mysql, JPA and Hibernate.
 
+
+![alt text](https://github.com/saranshbansal/spam-detection-analytics-tool/blob/master/img.png?raw=true)
+
 ## Requirements
 
 1. Java - 1.8.x

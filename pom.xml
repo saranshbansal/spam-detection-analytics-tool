@@ -5,12 +5,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.example</groupId>
-	<artifactId>easy-notes</artifactId>
+	<artifactId>spam-detector</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
 	<name>spam-detector</name>
-	<description>Spam Detection Application</description>
+	<description>Spam Detection Analysis Tool</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>

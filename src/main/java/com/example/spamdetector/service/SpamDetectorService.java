@@ -45,28 +45,26 @@ public class SpamDetectorService
         }
         catch (Exception e)
         {
-            // TODO: handle exception
+            e.printStackTrace();
         }
 
     }
 
 
-    public Map<String, ResultBean> getDataByMsg(String msg)
+    public Map<String, ResultBean> getDataByMsg(String key)
     {
-        Map<String, ResultBean> resultMap = new HashMap<>();
         try
         {
-            List<SpamDetector> results = dao.getDataByMsg(msg);
-
-            resultMap = createResultMap(results);
-
+            if (key.matches("[A-Za-z0-9]+"))
+            {
+                return createResultMap(dao.getDataByMsg(key));
+            }
         }
         catch (Exception e)
         {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
-        return resultMap;
+        return null;
     }
 
 
